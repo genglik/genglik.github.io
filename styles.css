@@ -1,5 +1,5 @@
-		body {
-		  background: #1e2025;
+	    body {
+		  background-color: hsl(223, 10%, 13%);
 		}
 	  
 	    p {
@@ -16,6 +16,7 @@
 		  font-family: Arial Black;
 		  text-shadow: green 1px 1px 0, red -1px -1px 0, 
                red -1px 1px 0, red 1px -1px 0;
+		  transform: skewX(10deg);
 		}
 		
 		p u[id="important"] {
@@ -32,6 +33,7 @@
 		  background: white;
 		  min-width: 430px;
 		}
+
 		
 		#same_line {
 		  display: inline-block;
@@ -41,8 +43,16 @@
 		
 		h1.first_head {
 		  text-align: right;
-		  padding-top: 17px;
+		  padding-top: 22px;
 		  padding-right: 30px;
+		  font-family: "Orchidea Pro";
+			text-shadow: 4px 2px 7px darkslategray;
+			color: black;
+			transition: color 0.5s;
+		}
+
+		h1.first_head:hover {
+			color: red;
 		}
 		
 		p.on_top {
@@ -53,10 +63,14 @@
 		  padding: 16px;
 		  position: absolute;
 		  text-align: left;
-		  background: black;
+
 		  color: white;
 		  z-index: 101;
 		  opacity: 0.86;
+		  border-bottom-right-radius: 20px;
+		  border-top-right-radius: 40px;
+	      box-shadow: 4px 4px 6px 2px darkslateblue;
+			background: radial-gradient(hsl(0, 100%, 32%), hsl(255, 100%, 0%));
 		}
 		
 		p.first_empty_ending {
@@ -88,6 +102,7 @@
 		  font-size: 22px;
 		  font-family: Consolas;
 		  color: blue;
+		  text-shadow: 2px 2px 5px black;
 		}
 		
 		ol{
@@ -99,6 +114,10 @@
 		  color: #800080;
 		  font-style: italic;
 		  padding-right: 45px;
+		  box-shadow: 3px 1px 4px 2px black inset;
+		  padding-left: 10px;
+		  padding-top: 5px;
+		  padding-bottom: 3px;
 		}
 		
 		.spoiler {
@@ -297,4 +316,62 @@
 				display: block;
 			}
 
+		}
+
+		@font-face {
+			font-family: 'Pribambas';
+			src: url('fonts/Pribambas-Regular.eot');
+			src: local('Pribambas-Regular'),
+			url('fonts/Pribambas-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/Pribambas-Regular.woff2') format('woff2'),
+			url('fonts/Pribambas-Regular.woff') format('woff'),
+			url('fonts/Pribambas-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Sulphur Point';
+			src: url('fonts/SulphurPoint-Regular.eot');
+			src: local('Sulphur Point Regular'), local('SulphurPoint-Regular'),
+			url('fonts/SulphurPoint-Regular.eot?#iefix') format('embedded-opentype'),
+			url('fonts/SulphurPoint-Regular.woff2') format('woff2'),
+			url('fonts/SulphurPoint-Regular.woff') format('woff'),
+			url('fonts/SulphurPoint-Regular.ttf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Sulphur Point';
+			src: url('fonts/SulphurPoint-Light.eot');
+			src: local('Sulphur Point Light'), local('SulphurPoint-Light'),
+			url('fonts/SulphurPoint-Light.eot?#iefix') format('embedded-opentype'),
+			url('fonts/SulphurPoint-Light.woff2') format('woff2'),
+			url('fonts/SulphurPoint-Light.woff') format('woff'),
+			url('fonts/SulphurPoint-Light.ttf') format('truetype');
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Sulphur Point';
+			src: url('fonts/SulphurPoint-Bold.eot');
+			src: local('Sulphur Point Bold'), local('SulphurPoint-Bold'),
+			url('fonts/SulphurPoint-Bold.eot?#iefix') format('embedded-opentype'),
+			url('fonts/SulphurPoint-Bold.woff2') format('woff2'),
+			url('fonts/SulphurPoint-Bold.woff') format('woff'),
+			url('fonts/SulphurPoint-Bold.ttf') format('truetype');
+			font-weight: bold;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: 'Orchidea Pro';
+			src: local('Orchidea Pro Medium Italic'), local('Orchidea-Pro-Medium-Italic'),
+			url('fonts/OrchideaPro-MediumItalic.woff2') format('woff2'),
+			url('fonts/OrchideaPro-MediumItalic.woff') format('woff'),
+			url('fonts/OrchideaPro-MediumItalic.ttf') format('truetype');
+			font-weight: 500;
+			font-style: italic;
 		}
