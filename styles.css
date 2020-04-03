@@ -180,7 +180,7 @@
 		a:hover {color:#EE00FF;}
 		a:active {color:#1200FF;}
 
-		@media (max-width: 930px){
+		@media screen and (max-width: 930px){
 
 			#same_line.little_image, #same_line.little_image_2 {
 				padding-left: 45px;
@@ -225,7 +225,7 @@
 
 		}
 
-		@media (max-width: 837px){
+		@media screen and (max-width: 837px){
 			p.on_top {
 				margin-left: 55px;
 				width: 185px;
@@ -234,7 +234,7 @@
 			}
 		}
 
-		@media (max-width: 735px){
+		@media screen and (max-width: 735px){
 			p.on_top {
 				font-size: 12.5px;
 				margin-left: 10px;
@@ -244,7 +244,7 @@
 			}
 		}
 
-		@media (max-width: 680px) {
+		@media screen and (max-width: 680px) {
 			#video {
 				width: 100%;
 				min-height: 470px;
@@ -252,19 +252,19 @@
 			}
 		}
 
-		@media (max-width: 540px) {
+		@media screen and (max-width: 540px) {
 			ul.cntr_menu {
 				font-size: smaller;
 			}
 		}
 
-		@media (max-width: 462px) {
+		@media screen and (max-width: 462px) {
 			ul.cntr_menu {
 				font-size: 13px;
 			}
 		}
 
-		@media (max-width: 530px) {
+		@media screen and (max-width: 530px) {
 			#video {
 				width: 100%;
 				min-height: 300px;
@@ -272,7 +272,7 @@
 			}
 		}
 
-		@media (min-width: 930px) {
+		@media screen and (min-width: 930px) {
 
 			.center {
 				width: 50%;
